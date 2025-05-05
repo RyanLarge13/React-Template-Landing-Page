@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Special Gothic Condensed One";
+  letter-spacing: 0.5px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.icon-banner-side-shadow::after,
+.icon-banner-side-shadow::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 100%;
+}
+
+.icon-banner-side-shadow::after {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(216, 180, 254, 0.9),
+    rgba(255, 255, 255, 0)
+  );
+  z-index: 1;
+}
+
+.icon-banner-side-shadow::before {
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(216, 180, 254, 0.9)
+  );
+  z-index: 1;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* margin-left: -30px; */
+  width: auto;
+}
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  background: grey;
+}
