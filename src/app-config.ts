@@ -4,7 +4,7 @@ import logo from "./assets/images/logo.webp";
 
 const AppConfig = {
   theme: {
-    mainScheme: "bg-black text-white",
+    mainScheme: "bg-yellow-950 text-white",
     bgPrimary: "bg-yellow-800",
     bgSecondary: "bg-yellow-100",
     bgTrimary: "bg-yellow-950",
@@ -89,7 +89,11 @@ const AppConfig = {
       },
     },
     iconBanner: {
-      images: [{ src: "", alt: "" }],
+      images: [
+        { src: logo, alt: "logo" },
+        { src: logo, alt: "logo" },
+        { src: logo, alt: "logo" },
+      ],
     },
   },
   businessData: {

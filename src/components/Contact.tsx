@@ -121,7 +121,7 @@ const Contact = () => {
     >
       {/* Error from invalid for data */}
       {error.show ? (
-        <div className="fixed bottom-10 z-[999] left-10 p-3 rounded-md bg-rose-100 shadow-md backdrop-blur-md bg-opacity-20 max-w-[400px]">
+        <div className="fixed bottom-10 z-[999] left-10 p-3 rounded-md bg-rose-200 text-black shadow-md backdrop-blur-md bg-opacity-20 max-w-[400px]">
           <p>{error.message}</p>
         </div>
       ) : null}
