@@ -177,7 +177,7 @@ const Contact = () => {
             src={AppConfig.businessData.googleMapsEmbed}
             width={dynamicWidth - 50}
             height={dynamicWidth}
-            style={{ border: 0, maxWidth: 400 }}
+            style={{ border: 0, maxWidth: 400, borderRadius: 5 }}
             // allowfullscreen={true}
             loading="lazy"
             // referrerpolicy="no-referrer-when-downgrade"
@@ -193,7 +193,7 @@ const Contact = () => {
           <p>{AppConfig.businessData.sundayHours}</p>
         </div>
       </div>
-      <form onSubmit={handleSendEmail} className="mt-16">
+      <form onSubmit={handleSendEmail} className="mt-16 text-black">
         <input
           type="text"
           value={name}
@@ -226,7 +226,7 @@ const Contact = () => {
         <button
           type="submit"
           disabled={disabled}
-          className={`rounded-md shadow-sm ${AppConfig.theme.bgPrimary} px-10 py-2 ${AppConfig.theme.textHoverLight} duration-200 cursor-pointer`}
+          className={`rounded-md text-white shadow-sm ${AppConfig.theme.bgPrimary} ${AppConfig.theme.bgHover} px-10 py-2 hover:text-black duration-200 cursor-pointer`}
         >
           SEND MESSAGE
         </button>

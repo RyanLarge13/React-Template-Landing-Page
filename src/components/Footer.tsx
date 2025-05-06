@@ -19,9 +19,9 @@ const Footer = () => {
           >
             {AppConfig.businessData.businessName}
           </h2>
-          <p className="mt-5 mb-2">{AppConfig.text.footer.intro}</p>
-          <hr />
-          <div className="flex justify-start items-center gap-x-5 mt-3">
+          <p className="mt-5 mb-2 text-black">{AppConfig.text.footer.intro}</p>
+          <hr className="text-black" />
+          <div className="flex justify-start items-center gap-x-5 mt-3 text-black">
             <a
               href="https://wa.me/message/3O2DQS4WSGV4H1"
               target="_blank"
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 p-5 flex-1">
+        <div className="mt-10 p-5 flex-1 text-black">
           <div>
             <h3
               className={`font-bold text-2xl mt-3 ${AppConfig.theme.textColored}`}
@@ -86,7 +86,7 @@ const Footer = () => {
             </p>
             <form
               onSubmit={handleSubscribe}
-              className={`rounded-full outline-none focus:outline-white focus:outline-3 shadow-sm my-2 w-full ${AppConfig.theme.bgPrimary} flex justify-between`}
+              className={`rounded-full outline-none text-white focus:outline-white focus:outline-3 shadow-sm my-2 w-full ${AppConfig.theme.bgPrimary} flex justify-between`}
             >
               <input
                 type="text"
@@ -95,7 +95,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className={`rounded-full ${AppConfig.theme.bgTrimary} p-3 w-13 outline-white outline-2 duration-200 ${AppConfig.theme.bgHover} hover:outline-black cursor-pointer`}
+                className={`rounded-full ${AppConfig.theme.bgTrimary} p-3 w-13 outline-white outline-2 duration-200 ${AppConfig.theme.bgHover} hover:text-black hover:outline-black cursor-pointer`}
               >
                 Go
               </button>
@@ -104,7 +104,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="p-10">
+      <div className="p-10 text-black">
         <p className="text-xs text-center">
           Copyright @${AppConfig.businessData.businessName}, All Rights Reserved
         </p>

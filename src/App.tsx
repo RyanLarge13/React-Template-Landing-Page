@@ -1,7 +1,7 @@
 import { FormEvent, useContext, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { FaSearch, FaWhatsapp } from "react-icons/fa";
-import { PiPawPrintFill } from "react-icons/pi";
+import { MdMenu } from "react-icons/md";
 
 import AppConfig from "./app-config";
 import About from "./components/About";
@@ -10,12 +10,9 @@ import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import IconBanner from "./components/IconBanner";
-// import IconBanner from "./components/IconBanner";
 import Nav from "./components/Nav";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
-// import Testimonials from "./components/Testimonials";
-import searchableTerms from "./constants/searchableTerms";
 import { NavContext } from "./context/NavContext";
 import { useIntersectionObserver } from "./hooks/intersectionObserver";
 
@@ -41,7 +38,7 @@ const App = () => {
   const findId = () => {
     let href = "main";
 
-    searchableTerms.forEach((term) => {
+    AppConfig.searchableTerms.forEach((term) => {
       term.texts.forEach((txt) => {
         if (txt.includes(searchText.toLowerCase())) {
           href = term.id;
@@ -68,7 +65,7 @@ const App = () => {
   };
 
   return (
-    <main className={`overflow-x-clip`}>
+    <main className={`overflow-x-clip ${AppConfig.theme.mainScheme}`}>
       {/* Advertisement div */}
       <div
         aria-roledescription="advertisement"
@@ -81,21 +78,17 @@ const App = () => {
       </div>
 
       <header
-        className={`flex justify-between items-center sticky top-0 right-0 left-0 ${AppConfig.theme.bgSecondary} z-10 shadow-sm`}
+        className={`flex justify-between items-center sticky top-0 right-0 left-0 ${AppConfig.theme.bgSecondary} z-10 shadow-sm text-black`}
       >
         <a href="#main">
-          <img
-            src={AppConfig.images.logoPath}
-            alt="shelly's pets awesome logo"
-            className="h-14"
-          />
+          <img src={AppConfig.images.logoPath} alt="logo" className="h-14" />
         </a>
         <Nav showNav={showNav} setShowNav={setShowNav} />
         <button
           className={`p-5 ${AppConfig.theme.textHover} duration-200 md:hidden cursor-pointer`}
           onClick={() => setShowNav((prev) => !prev)}
         >
-          <PiPawPrintFill />
+          <MdMenu />
         </button>
         <div className="hidden md:flex justify-center items-center flex-shrink mr-2">
           {showSearch ? (

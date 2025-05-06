@@ -38,18 +38,20 @@ const Hero = () => {
             <img
               src={AppConfig.images.hero.heroSvg.src}
               alt={AppConfig.images.hero.heroSvg.alt}
-              className="absolute top-[-30px] left-[-20px] scale-[0.9]"
+              className="absolute top-[-30px] left-[-20px] scale-[0.9] max-w-20"
             />
           </div>
 
-          <div className="relative px-5 max-w-[400px] mx-auto bg-gray-100 bg-opacity-40 backdrop-blur-md shadow-md rounded-md py-10 md:translate-y-[-30px] md:translate-x-[-50px] mb-10 mt-5 md:mt-0">
+          <div
+            className={`relative px-5 max-w-[400px] mx-auto ${AppConfig.theme.mainScheme} bg-opacity-40 backdrop-blur-md shadow-md rounded-md py-10 md:translate-y-[-30px] md:translate-x-[-50px] mb-10 mt-5 md:mt-0`}
+          >
             <p>{AppConfig.text.hero.catcher}</p>
           </div>
         </div>
 
         <a
           href="#services"
-          className={`${AppConfig.theme.bgTrimary} flex mx-auto w-full max-w-[85%] justify-center items-center outline-black outline-3 ${AppConfig.theme.textColorTrimary} font-bold ${AppConfig.theme.bgHoverLight} hover:text-black duration-200 p-5 lg:max-w-[300px] lg:mt-10`}
+          className={`${AppConfig.theme.bgTrimary} flex mx-auto w-full max-w-[85%] justify-center items-center outline-black outline-3 ${AppConfig.theme.textColorTrimary} font-bold ${AppConfig.theme.bgHover} hover:text-black duration-200 p-5 lg:max-w-[300px] lg:mt-10`}
         >
           Services
         </a>

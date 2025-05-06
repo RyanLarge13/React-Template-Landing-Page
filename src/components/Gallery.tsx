@@ -17,7 +17,9 @@ const Gallery = () => {
       data-index="4"
       className={`pt-20 ${AppConfig.theme.bgSecondary}`}
     >
-      <p className="text-center">{AppConfig.text.gallery.headingText}</p>
+      <p className="text-center text-black">
+        {AppConfig.text.gallery.headingText}
+      </p>
       <h2
         className={`font-bold text-4xl text-center mt-3 ${AppConfig.theme.textColored} mb-40`}
       >

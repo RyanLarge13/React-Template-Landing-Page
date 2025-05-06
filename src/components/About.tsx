@@ -1,7 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
 
 import AppConfig from "../app-config";
-import DogBeingWashed from "../assets/images/dog-getting-washed.png";
 
 const About = () => {
   return (
@@ -16,9 +15,9 @@ const About = () => {
       ></div>
       <div className="relative">
         <img
-          src={DogBeingWashed}
-          alt="Dog being washed"
-          className="max-h-[500px] aspect-square rounded-md shadow-md"
+          src={AppConfig.images.about.mainImage.src}
+          alt={AppConfig.images.about.mainImage.alt}
+          className="aspect-square rounded-md shadow-md mx-auto"
         />
         <div
           className={`h-40 w-3 rounded-full ${AppConfig.theme.bgTrimary} absolute left-0 top-[50%] translate-x-[-50%]`}
@@ -45,7 +44,7 @@ const About = () => {
         </ul>
         <a
           href="#contact"
-          className={`${AppConfig.theme.bgTrimary} flex mt-10 w-full justify-center items-center outline-black outline-3 ${AppConfig.theme.textColorTrimary} font-bold hover:bg-purple-100 hover:text-black duration-200 p-5 lg:max-w-[300px] lg:mt-10`}
+          className={`${AppConfig.theme.bgTrimary} flex mt-10 w-full justify-center items-center outline-black outline-3 ${AppConfig.theme.textColorTrimary} font-bold ${AppConfig.theme.bgHover} hover:text-black duration-200 p-5 lg:max-w-[300px] lg:mt-10`}
         >
           Get In Touch
         </a>

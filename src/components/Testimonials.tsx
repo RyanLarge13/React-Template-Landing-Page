@@ -22,7 +22,9 @@ const Testimonials = () => {
       data-index="3"
       className={`${AppConfig.theme.bgSecondary} py-20 min-h-screen p-5 flex justify-center items-center flex-col`}
     >
-      <p className="text-center">{AppConfig.text.testimonials.headingText}</p>
+      <p className="text-center text-black">
+        {AppConfig.text.testimonials.headingText}
+      </p>
       <h2
         className={`font-bold text-4xl text-center mt-3 mb-2 ${AppConfig.theme.textColored}`}
       >
@@ -36,9 +38,13 @@ const Testimonials = () => {
               transform: `translateX(-${100 * sliderIndex}%)`,
               opacity: sliderIndex === i ? 1 : 0,
             }}
-            className="md:flex md:mt-20 md:gap-x-10 justify-center items-center min-w-full duration-400"
+            className="md:flex md:mt-20 md:gap-x-10 justify-center items-center min-w-full duration-400 text-black"
           >
-            <img src={t.img} alt="person" />
+            <img
+              src={t.img}
+              alt="person"
+              className="rounded-full aspect-square"
+            />
             <div className="mt-5 ml-3">
               <p className="max-w-[400px]">{t.text}</p>
               <p className={`${AppConfig.theme.textColored} font-semibold`}>
