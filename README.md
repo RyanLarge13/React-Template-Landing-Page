@@ -1,83 +1,94 @@
-# Shelly's Pets
+# React Vite Landing Page Template
 
-**Shelly's Pets** is a beautiful and responsive landing page for a local dog grooming business based in Buffalo, NY. This site showcases the services offered, builds trust with potential clients, and provides a simple contact form to get in touch — all built with **React**, **Vite**, and **Tailwind CSS**.
-
-<img src="./public/Screen-Shot.png" alt="screen-shot" />
+A modern, customizable landing page template built with **React**, **Vite**, and **Tailwind CSS**. This template is perfect for quickly launching a beautiful marketing or business landing page with minimal setup.
 
 ## Features
 
-- Responsive, mobile-friendly layout
-- Clean and modern design
-- Simple contact form powered by [EmailJS](https://www.emailjs.com/)
-- Built with fast and modern tools
-
-## Tech Stack
-
-- **React** – Component-based frontend framework
-- **Vite** – Lightning-fast development environment
-- **Tailwind CSS** – Utility-first styling
-- **EmailJS** – Send email directly from the frontend
+- **Hero Section** – Eye-catching top section for your main message
+- **About Section** – Describe your brand, business, or mission
+- **Services Section** – Showcase what you offer
+- **Testimonials** – Highlight customer feedback
+- **Icon Banner** – Visual summary of key points or tools
+- **Gallery** – Display images or portfolios
+- **Contact Form** – Allow users to easily reach out
+- **Footer** – Final navigation and branding
+- **Responsive Navigation** – Works across all screen sizes
 
 ## Getting Started
 
-### Prerequisites
+### 1. Clone the repository
 
-- Node.js (v16 or higher)
-- npm or yarn
+```
+bash
 
-### Installation
+git clone https://github.com/RyanLarge13/React-Template-Landing-Page.git
+cd React-Template-Landing-Page
+```
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/shellys-pets.git
-   cd shellys-pets
-   ```
-
-2. Install Deps
+2. Install dependencies
 
 ```
 npm install
 # or
 yarn install
-
 ```
 
-3. Create an .env file in the root with your EmailJS credentials:
-
-```
-VITE_EMAILJS_SERVICE_ID=your_service_id
-VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_EMAILJS_USER_ID=your_user_id
-
-```
-
-4. Start the dev server
+3. Run the development server
 
 ```
 npm run dev
+# or
+yarn dev
 ```
 
-## Deployment
+Open http://localhost:5173 in your browser to see your landing page.
 
-You can deploy this site with platforms like Vercel, Netlify, or any static hosting provider. Run:
+Customization
+
+Edit Content & Theme
+
+Update the file at src/app-config.ts to customize:
+
+Site title and description
+
+Hero section text and CTA
+
+About section content
+
+Services offered
+
+Testimonials
+
+Icons
+
+Contact form info
+
+Social and footer links
+
+Colors, fonts, and other theme values
+
+Add Images
+
+Place your image assets in:
 
 ```
+src/assets/
+```
+
+Update image references in app-config.ts or relevant components.
+
+Deployment
+
+You can easily deploy this template to platforms like Vercel, Netlify, or GitHub Pages:
+
 npm run build
-```
 
-Then upload the contents of the dist folder to your host.
+Then follow the hosting platform's guide to deploy the dist/ folder.
 
-## Contact
+[License](./LICENSE.md)
 
-Feel free to reach out if you have questions or suggestions:
+This project is open-source and available under the MIT License.
 
-Website: shellyspets.com
+---
 
-Email: info@shellyspets.com
-
-## License
-
-This project is open source and available under the MIT License
-
-See License [LICENSE](./LICENSE)
+Built with passion using React, Vite, and Tailwind CSS.
