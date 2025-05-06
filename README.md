@@ -14,6 +14,10 @@ A modern, customizable landing page template built with **React**, **Vite**, and
 - **Footer** – Final navigation and branding
 - **Responsive Navigation** – Works across all screen sizes
 
+## Example sites 
+
+1. [Shelly's Pets]("https://shellys-pets.vercel.app/")
+
 ## Getting Started
 
 ### 1. Clone the repository
