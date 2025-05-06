@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import AppConfig from "../app-config.ts";
 
 const Testimonials = () => {
@@ -6,7 +7,9 @@ const Testimonials = () => {
 
   useEffect(() => {
     const slide = setInterval(() => {
-      setSliderIndex(prev => (prev === testimonials.length - 1 ? 0 : prev + 1));
+      setSliderIndex((prev) =>
+        prev === AppConfig.testimonials.length - 1 ? 0 : prev + 1
+      );
     }, 20000);
 
     return () => clearInterval(slide);
@@ -31,7 +34,7 @@ const Testimonials = () => {
             key={i}
             style={{
               transform: `translateX(-${100 * sliderIndex}%)`,
-              opacity: sliderIndex === i ? 1 : 0
+              opacity: sliderIndex === i ? 1 : 0,
             }}
             className="md:flex md:mt-20 md:gap-x-10 justify-center items-center min-w-full duration-400"
           >
@@ -47,7 +50,7 @@ const Testimonials = () => {
       </div>
       {/* Navigation for slider */}
       <div className="flex justify-center items-center mt-40 gap-x-1">
-        {testimonials.map((_, i) => (
+        {AppConfig.testimonials.map((_, i) => (
           <button
             key={i}
             onClick={() => setSliderIndex(i)}

@@ -12,7 +12,7 @@ const Services = () => {
       <p className="text-3xl mb-20 mt-5">{AppConfig.text.services.intro}</p>
       <div className="flex flex-col md:flex-row justify-evenly items-center">
         {AppConfig.images.services.map((service, index) => (
-          <div className="relative flex-1/3">
+          <div key={index} className="relative flex-1/3">
             <div className="top-0 right-0 left-0 bottom-0 absolute">
               <p className="absolute text-6xl font-bold left-[50%] top-[50%] text-purple-500 translate-x-[-50%] translate-y-[-50%]">
                 {service.text}

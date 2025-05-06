@@ -1,12 +1,11 @@
 import { Dispatch, SetStateAction, useContext } from "react";
 
 import AppConfig from "../app-config";
-import Logo from "../assets/images/logo-trans-vert.png";
 import { NavContext } from "../context/NavContext";
 
 const Nav = ({
   showNav,
-  setShowNav
+  setShowNav,
 }: {
   showNav: boolean;
   setShowNav: Dispatch<SetStateAction<boolean>>;
@@ -24,7 +23,7 @@ const Nav = ({
       }`}
     >
       <ul className="flex flex-col justify-center items-center w-full md:flex-row">
-        {AppConfig.navigationLinks.map(link => (
+        {AppConfig.navigationLinks.map((link) => (
           <li key={link.id} className="w-full text-center">
             <a
               href={link.hash}
@@ -52,7 +51,7 @@ const Nav = ({
         }}
         className="md:hidden cursor-pointer"
       >
-        <img src={AppLogo.images.logoPath} alt="logo" className="h-20" />
+        <img src={AppConfig.images.logoPath} alt="logo" className="h-20" />
       </button>
     </nav>
   );

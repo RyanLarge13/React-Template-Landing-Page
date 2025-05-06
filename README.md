@@ -14,9 +14,9 @@ A modern, customizable landing page template built with **React**, **Vite**, and
 - **Footer** – Final navigation and branding
 - **Responsive Navigation** – Works across all screen sizes
 
-## Example sites 
+## Example sites
 
-1. [Shelly's Pets]("https://shellys-pets.vercel.app/")
+[Shelly's Pets]("https://shellys-pets.vercel.app/")
 
 ## Getting Started
 
@@ -53,25 +53,25 @@ Edit Content & Theme
 
 Update the file at src/app-config.ts to customize:
 
-* **Site title and description**
+- **Site title and description**
 
-* **Hero section text and CTA**
+- **Hero section text and CTA**
 
-* **About section content**
+- **About section content**
 
-* **Services offered**
+- **Services offered**
 
-* **Testimonials**
+- **Testimonials**
 
-* **Icons**
+- **Icons**
 
-* **Contact form info**
+- **Contact form info**
 
-* **Social and footer links**
+- **Social and footer links**
 
-* **Colors, fonts, and other theme values**
+- **Colors, fonts, and other theme values**
 
-* **Add Images**
+- **Add Images**
 
 Place your image assets in:
 
