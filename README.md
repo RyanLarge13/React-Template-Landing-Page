@@ -43,31 +43,31 @@ yarn dev
 
 Open http://localhost:5173 in your browser to see your landing page.
 
-Customization
+## Customization
 
 Edit Content & Theme
 
-Update the file at src/app-config.ts to customize:
+- Update the file at src/app-config.ts to customize:
 
-Site title and description
+* **Site title and description**
 
-Hero section text and CTA
+* **Hero section text and CTA**
 
-About section content
+* **About section content**
 
-Services offered
+* **Services offered**
 
-Testimonials
+* **Testimonials**
 
-Icons
+* **Icons**
 
-Contact form info
+* **Contact form info**
 
-Social and footer links
+* **Social and footer links**
 
-Colors, fonts, and other theme values
+* **Colors, fonts, and other theme values**
 
-Add Images
+* **Add Images**
 
 Place your image assets in:
 
@@ -77,7 +77,11 @@ src/assets/
 
 Update image references in app-config.ts or relevant components.
 
-Deployment
+## Hook up contact form
+
+Get ahold of me at <a href="mailto:ryanlarge@ryanlarge.dev">my email</a> to connect the contact form on your template site to my emailing service and have clients send you emails from your new website landing page!
+
+## Deployment
 
 You can easily deploy this template to platforms like Vercel, Netlify, or GitHub Pages:
 
