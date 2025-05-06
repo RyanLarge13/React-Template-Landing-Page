@@ -47,7 +47,7 @@ Open http://localhost:5173 in your browser to see your landing page.
 
 Edit Content & Theme
 
-- Update the file at src/app-config.ts to customize:
+Update the file at src/app-config.ts to customize:
 
 * **Site title and description**
 
@@ -79,7 +79,7 @@ Update image references in app-config.ts or relevant components.
 
 ## Hook up contact form
 
-Get ahold of me at <a href="mailto:ryanlarge@ryanlarge.dev">my email</a> to connect the contact form on your template site to my emailing service and have clients send you emails from your new website landing page!
+Get ahold of me at <a href="mailto:ryanlarge@ryanlarge.dev">my email</a> to connect the contact form on your template site to my emailing service and have clients send you emails from your new website landing page in a secure and safe manner!
 
 ## Deployment
 
