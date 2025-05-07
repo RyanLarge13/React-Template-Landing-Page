@@ -7,8 +7,6 @@ export const useIntersectionObserver = (
   useEffect(() => {
     const elements = document.querySelectorAll("section[data-observer]");
 
-    console.log(elements);
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

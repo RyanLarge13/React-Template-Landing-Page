@@ -4,15 +4,18 @@ import IconTranslate from "./IconTranslate";
 const IconBanner = () => {
   return (
     <section
-      className={`${AppConfig.theme.bgPrimary} overflow-hidden flex justify-center items-center relative`}
+      className={`${AppConfig.theme.bgPrimary} overflow-hidden h-[75px] relative`}
     >
       {/* Decorative element for fading icons in and out of view gently */}
       <div className="icon-banner-side-shadow"></div>
-      <div className="p-3 flex justify-evenly items-center min-w-[125%]">
-        {AppConfig.images.iconBanner.images.map((img, index) => (
-          <IconTranslate key={index} img={img} />
-        ))}
-      </div>
+      {AppConfig.images.iconBanner.images.map((img, index) => (
+        <IconTranslate
+          key={index}
+          img={img}
+          offset={index}
+          len={AppConfig.images.iconBanner.images.length}
+        />
+      ))}
     </section>
   );
 };

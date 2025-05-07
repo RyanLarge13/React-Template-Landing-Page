@@ -43,7 +43,7 @@ const Testimonials = () => {
             <img
               src={t.img}
               alt="person"
-              className="rounded-full aspect-square"
+              className="rounded-full aspect-square max-h-[400px]"
             />
             <div className="mt-5 ml-3">
               <p className="max-w-[400px]">{t.text}</p>

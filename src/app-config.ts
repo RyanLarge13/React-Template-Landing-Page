@@ -1,5 +1,6 @@
 import flowerShop2 from "./assets/images/flowershop-2.png";
 import flowerShop from "./assets/images/flowershop.png";
+import logoPNG from "./assets/images/logo.png";
 import logo from "./assets/images/logo.webp";
 
 const AppConfig = {
@@ -62,7 +63,7 @@ const AppConfig = {
     whatsapp: "https://wa.me/message/",
   },
   images: {
-    logoPath: logo,
+    logoPath: logoPNG,
     gallery: {
       images: [
         { alt: "flower shop", src: flowerShop },
